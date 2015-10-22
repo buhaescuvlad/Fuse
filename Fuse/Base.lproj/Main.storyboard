@@ -47,42 +47,22 @@
                                     <constraint firstAttribute="height" constant="64" id="RmS-jV-aGW"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhe-OX-BrE">
-                                <rect key="frame" x="252" y="159" width="96" height="42"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="eCe-wa-O7L"/>
-                                    <constraint firstAttribute="height" constant="42" id="jta-z3-Y15"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.91372549020000005" green="0.1333333333" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iYb-P4-GfC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0uI-aU-2Tl"/>
                             <constraint firstItem="7pR-tm-OM4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="BJh-dA-EgJ"/>
-                            <constraint firstItem="zhe-OX-BrE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BkL-d4-Sfu"/>
                             <constraint firstItem="Oua-wX-uw6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IJN-5s-hGA"/>
                             <constraint firstItem="7pR-tm-OM4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="KdW-tJ-NrQ"/>
-                            <constraint firstItem="zhe-OX-BrE" firstAttribute="top" secondItem="iYb-P4-GfC" secondAttribute="bottom" constant="8" id="LHe-L7-h4O"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7pR-tm-OM4" secondAttribute="bottom" constant="1" id="LVR-V8-All"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7pR-tm-OM4" secondAttribute="trailing" constant="-20" id="ULZ-21-zPH"/>
                             <constraint firstItem="iYb-P4-GfC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="W7f-6B-WNf"/>
                             <constraint firstItem="iYb-P4-GfC" firstAttribute="top" secondItem="JzV-Ub-e5p" secondAttribute="bottom" constant="74" id="WiH-Fd-3j1"/>
                             <constraint firstItem="JzV-Ub-e5p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dxC-Qs-MGw"/>
                             <constraint firstItem="JzV-Ub-e5p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gHi-Qc-VUE"/>
-                            <constraint firstItem="zhe-OX-BrE" firstAttribute="top" secondItem="iYb-P4-GfC" secondAttribute="bottom" constant="20" id="mX4-y3-Qyb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Oua-wX-uw6" secondAttribute="bottom" constant="20" id="vaj-lY-PZT"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="mX4-y3-Qyb"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="textField" destination="iYb-P4-GfC" id="spC-yT-a4M"/>

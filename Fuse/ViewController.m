@@ -36,10 +36,23 @@
     NSLog(@"dismiss keyboard");
     [textField resignFirstResponder];
     
+    if ([textField.text isEqualToString:@""] || [textField.text isEqualToString:@" "]) {
+        [self generateAlertWithMessage:@"Please insert a company name" andTitle:@"Text Field empty"];
+    }
+    else{
+        [self handleRequestWithCompanyName:self.textField.text];
+    }
+    
+    
+    return YES;
+}
+
+-(void)handleRequestWithCompanyName:(NSString *)companyName
+{
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
-    NSString *theUrl =[NSString stringWithFormat:@"%@%@%@",kUrlFirstPart,self.textField.text,kUrlSecondPart];
+    NSString *theUrl =[NSString stringWithFormat:@"%@%@%@",kUrlFirstPart,companyName,kUrlSecondPart];
     [manager GET:theUrl
       parameters:nil
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -55,26 +68,27 @@
              
          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              
-              self.textField.textColor=[UIColor redColor];
+             self.textField.textColor=[UIColor redColor];
              
              NSLog(@"Error: %@", error);
-             UIAlertController *alert=[UIAlertController alertControllerWithTitle:@"Error"
-                                                                             message:@"Request To Server went wrong"
-                                                                      preferredStyle:UIAlertControllerStyleAlert];
-            
-             UIAlertAction* ok = [UIAlertAction
-                                  actionWithTitle:@"OK"
-                                  style:UIAlertActionStyleDefault
-                                  handler:nil];
-             [alert addAction:ok]; // add action to uialertcontroller
-              [self presentViewController:alert animated:YES completion:nil];
+             [self generateAlertWithMessage:@"Company does not Exist" andTitle:@"Sorry"];
              
          }];
-    
-    
-    return YES;
 }
 
+-(void)generateAlertWithMessage:(NSString*)message andTitle:(NSString*)title
+{
+    UIAlertController *alert=[UIAlertController alertControllerWithTitle:title
+                                                                 message:message
+                                                          preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* ok = [UIAlertAction
+                         actionWithTitle:@"OK"
+                         style:UIAlertActionStyleDefault
+                         handler:nil];
+    [alert addAction:ok]; // add action to uialertcontroller
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

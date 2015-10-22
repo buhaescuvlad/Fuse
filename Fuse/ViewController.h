@@ -15,6 +15,8 @@
 
 @interface ViewController : UIViewController<UITextFieldDelegate>
 
+-(void)handleRequestWithCompanyName:(NSString *)companyName;
+-(void)generateAlertWithMessage:(NSString*)message andTitle:(NSString*)title;
 
 @end
 
