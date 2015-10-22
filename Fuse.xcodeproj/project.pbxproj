@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78A4429B1A4E16D2113E661E /* libPods-Fuse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B4DD7248457A261E4D5C15C /* libPods-Fuse.a */; };
+		7F1F00711BD9488000652873 /* fuseImgRes.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F00701BD9488000652873 /* fuseImgRes.png */; settings = {ASSET_TAGS = (); }; };
+		7F1F00731BD948DF00652873 /* FuseLogo_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1F00721BD948DF00652873 /* FuseLogo_x2.png */; settings = {ASSET_TAGS = (); }; };
 		7FD0F1E21BD7FDF1008300A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD0F1E11BD7FDF1008300A6 /* main.m */; };
 		7FD0F1E51BD7FDF1008300A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD0F1E41BD7FDF1008300A6 /* AppDelegate.m */; };
 		7FD0F1E81BD7FDF1008300A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD0F1E71BD7FDF1008300A6 /* ViewController.m */; };
@@ -27,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B4DD7248457A261E4D5C15C /* libPods-Fuse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fuse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CFA69E41384C6D495E49BE3 /* Pods-Fuse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuse.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fuse/Pods-Fuse.release.xcconfig"; sourceTree = "<group>"; };
+		7F1F00701BD9488000652873 /* fuseImgRes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fuseImgRes.png; sourceTree = "<group>"; };
+		7F1F00721BD948DF00652873 /* FuseLogo_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FuseLogo_x2.png; sourceTree = "<group>"; };
 		7FD0F1DD1BD7FDF1008300A6 /* Fuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD0F1E11BD7FDF1008300A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7FD0F1E31BD7FDF1008300A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +47,7 @@
 		7FD0F1F61BD7FDF1008300A6 /* FuseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD0F1FA1BD7FDF1008300A6 /* FuseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FuseTests.m; sourceTree = "<group>"; };
 		7FD0F1FC1BD7FDF1008300A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D604191630E6572687513D1F /* Pods-Fuse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fuse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fuse/Pods-Fuse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78A4429B1A4E16D2113E661E /* libPods-Fuse.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +75,8 @@
 				7FD0F1DF1BD7FDF1008300A6 /* Fuse */,
 				7FD0F1F91BD7FDF1008300A6 /* FuseTests */,
 				7FD0F1DE1BD7FDF1008300A6 /* Products */,
+				95476B21620FFF5B3229D3D8 /* Pods */,
+				EFA3257183FCCB4D7E246FFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +98,8 @@
 				7FD0F1E71BD7FDF1008300A6 /* ViewController.m */,
 				7FD0F1E91BD7FDF1008300A6 /* Main.storyboard */,
 				7FD0F1EC1BD7FDF1008300A6 /* Assets.xcassets */,
+				7F1F00701BD9488000652873 /* fuseImgRes.png */,
+				7F1F00721BD948DF00652873 /* FuseLogo_x2.png */,
 				7FD0F1EE1BD7FDF1008300A6 /* LaunchScreen.storyboard */,
 				7FD0F1F11BD7FDF1008300A6 /* Info.plist */,
 				7FD0F1E01BD7FDF1008300A6 /* Supporting Files */,
@@ -111,6 +124,23 @@
 			path = FuseTests;
 			sourceTree = "<group>";
 		};
+		95476B21620FFF5B3229D3D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D604191630E6572687513D1F /* Pods-Fuse.debug.xcconfig */,
+				7CFA69E41384C6D495E49BE3 /* Pods-Fuse.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFA3257183FCCB4D7E246FFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B4DD7248457A261E4D5C15C /* libPods-Fuse.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FD0F1FF1BD7FDF1008300A6 /* Build configuration list for PBXNativeTarget "Fuse" */;
 			buildPhases = (
+				FE802779C7BF31CDDD3498C7 /* Check Pods Manifest.lock */,
 				7FD0F1D91BD7FDF1008300A6 /* Sources */,
 				7FD0F1DA1BD7FDF1008300A6 /* Frameworks */,
 				7FD0F1DB1BD7FDF1008300A6 /* Resources */,
+				8B3F21AF20E8ACAE453DF231 /* Embed Pods Frameworks */,
+				A0929ED152D64B89ADC43D56 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,7 +226,9 @@
 			files = (
 				7FD0F1F01BD7FDF1008300A6 /* LaunchScreen.storyboard in Resources */,
 				7FD0F1ED1BD7FDF1008300A6 /* Assets.xcassets in Resources */,
+				7F1F00731BD948DF00652873 /* FuseLogo_x2.png in Resources */,
 				7FD0F1EB1BD7FDF1008300A6 /* Main.storyboard in Resources */,
+				7F1F00711BD9488000652873 /* fuseImgRes.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +240,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B3F21AF20E8ACAE453DF231 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fuse/Pods-Fuse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0929ED152D64B89ADC43D56 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fuse/Pods-Fuse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE802779C7BF31CDDD3498C7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7FD0F1D91BD7FDF1008300A6 /* Sources */ = {
@@ -339,6 +422,7 @@
 		};
 		7FD0F2001BD7FDF1008300A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D604191630E6572687513D1F /* Pods-Fuse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fuse/Info.plist;
@@ -350,6 +434,7 @@
 		};
 		7FD0F2011BD7FDF1008300A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CFA69E41384C6D495E49BE3 /* Pods-Fuse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Fuse/Info.plist;
@@ -402,6 +487,7 @@
 				7FD0F2011BD7FDF1008300A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FD0F2021BD7FDF1008300A6 /* Build configuration list for PBXNativeTarget "FuseTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +496,7 @@
 				7FD0F2041BD7FDF1008300A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

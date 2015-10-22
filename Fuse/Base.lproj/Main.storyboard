@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fuseImgRes.png" translatesAutoresizingMaskIntoConstraints="NO" id="7pR-tm-OM4" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="599"/>
+                                <animations/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iYb-P4-GfC">
+                                <rect key="frame" x="20" y="121" width="560" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuse Test API" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzV-Ub-e5p">
+                                <rect key="frame" x="220" y="20" width="160" height="27"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="0AY-ZL-96e"/>
+                                    <constraint firstAttribute="height" constant="27" id="54W-Sz-fiq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.9137254901960784" green="0.13333333333333333" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FuseLogo_x2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Oua-wX-uw6" userLabel="Logo">
+                                <rect key="frame" x="20" y="516" width="152" height="64"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="9QX-rX-Qgh"/>
+                                    <constraint firstAttribute="height" constant="64" id="RmS-jV-aGW"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhe-OX-BrE">
+                                <rect key="frame" x="252" y="159" width="96" height="42"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="eCe-wa-O7L"/>
+                                    <constraint firstAttribute="height" constant="42" id="jta-z3-Y15"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.91372549020000005" green="0.1333333333" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iYb-P4-GfC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0uI-aU-2Tl"/>
+                            <constraint firstItem="7pR-tm-OM4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="BJh-dA-EgJ"/>
+                            <constraint firstItem="zhe-OX-BrE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BkL-d4-Sfu"/>
+                            <constraint firstItem="Oua-wX-uw6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IJN-5s-hGA"/>
+                            <constraint firstItem="7pR-tm-OM4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="KdW-tJ-NrQ"/>
+                            <constraint firstItem="zhe-OX-BrE" firstAttribute="top" secondItem="iYb-P4-GfC" secondAttribute="bottom" constant="8" id="LHe-L7-h4O"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7pR-tm-OM4" secondAttribute="bottom" constant="1" id="LVR-V8-All"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7pR-tm-OM4" secondAttribute="trailing" constant="-20" id="ULZ-21-zPH"/>
+                            <constraint firstItem="iYb-P4-GfC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="W7f-6B-WNf"/>
+                            <constraint firstItem="iYb-P4-GfC" firstAttribute="top" secondItem="JzV-Ub-e5p" secondAttribute="bottom" constant="74" id="WiH-Fd-3j1"/>
+                            <constraint firstItem="JzV-Ub-e5p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dxC-Qs-MGw"/>
+                            <constraint firstItem="JzV-Ub-e5p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gHi-Qc-VUE"/>
+                            <constraint firstItem="zhe-OX-BrE" firstAttribute="top" secondItem="iYb-P4-GfC" secondAttribute="bottom" constant="20" id="mX4-y3-Qyb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Oua-wX-uw6" secondAttribute="bottom" constant="20" id="vaj-lY-PZT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mX4-y3-Qyb"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="iYb-P4-GfC" id="spC-yT-a4M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="304" y="316"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FuseLogo_x2.png" width="152" height="64"/>
+        <image name="fuseImgRes.png" width="764" height="1152"/>
+    </resources>
 </document>

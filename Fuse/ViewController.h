@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AFNetworking/AFNetworking.h>
+#import "AFNetworking.h"
 
-@interface ViewController : UIViewController
+#define kUrlFirstPart @"https://"
+#define kUrlSecondPart @".fusion-universal.com/api/v1/company.json"
+
+@interface ViewController : UIViewController<UITextFieldDelegate>
 
 
 @end
